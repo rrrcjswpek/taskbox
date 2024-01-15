@@ -21,6 +21,7 @@ export default function Task({
         />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
+
       <label htmlFor="title" aria-label={title} className="title">
         <input
           type="text"
@@ -28,7 +29,7 @@ export default function Task({
           readOnly={true}
           name="title"
           placeholder="Input title"
-          style={{ backgroundColor: "red" }}
+          style={{ textOverflow: "ellipsis" }}
         />
       </label>
 
